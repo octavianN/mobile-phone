@@ -13,6 +13,7 @@
         </profile>
     </context>
     <publication transtype="pdf-css-html5"/>
+    <publication transtype="pdf-css-html5"/>
     <deliverable id="x1000InPDF" name="Model x1000 in PDF">
         <context idref="x1000ModelContext"/>
         <output href="./x1000Model-PDF"/>
@@ -23,7 +24,9 @@
     <deliverable id="x2000InPDF" name="Model x2000 in PDF">
         <context idref="x2000ModelContext"/>
         <output href="./x2000Model-PDF"/>
-        <publication transtype="pdf"/>
+        <publication transtype="pdf">
+            <param href="cf://templates/Oxygen" name="pdf.publishing.template"/>
+        </publication>
     </deliverable>
     <deliverable id="x1000InWebHelp" name="Model x1000 in WebHelp">
         <context idref="x1000ModelContext"/>
