@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project xmlns="https://www.dita-ot.org/project">
     <context id="x1000ModelContext" name="x1000Model">
-        <input href="mobilePhone.ditamap"/>
+        <input href="../mobile-phone/mobilePhone.ditamap"/>
         <profile>
-            <ditaval href="ditaval/x1000.ditaval"/>
+            <ditaval href="../mobile-phone/ditaval/x1000.ditaval"/>
         </profile>
     </context>
     <context id="x2000ModelContext" name="x2000Model">
-        <input href="mobilePhone.ditamap"/>
+        <input href="../mobile-phone/mobilePhone.ditamap"/>
         <profile>
-            <ditaval href="ditaval/x2000.ditaval"/>
+            <ditaval href="../mobile-phone/ditaval/x2000.ditaval"/>
         </profile>
     </context>
     <publication transtype="pdf-css-html5"/>
