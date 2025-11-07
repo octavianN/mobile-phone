@@ -14,6 +14,7 @@
     </context>
     <publication transtype="pdf-css-html5"/>
     <publication transtype="pdf-css-html5"/>
+    <publication transtype="pdf-css-html5"/>
     <deliverable id="x1000InPDF" name="Model x1000 in PDF">
         <context idref="x1000ModelContext"/>
         <output href="./x1000Model-PDF"/>
@@ -31,7 +32,9 @@
     <deliverable id="x1000InWebHelp" name="Model x1000 in WebHelp">
         <context idref="x1000ModelContext"/>
         <output href="./x1000Model-WebHelp"/>
-        <publication transtype="webhelp-responsive"/>
+        <publication transtype="webhelp-responsive">
+            <param href="cf://templates/Oxygen" name="webhelp.publishing.template"/>
+        </publication>
     </deliverable>
     <deliverable id="x2000InWebHelp" name="Model x2000 in WebHelp">
         <context idref="x2000ModelContext"/>
