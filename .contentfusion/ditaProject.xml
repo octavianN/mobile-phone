@@ -58,4 +58,13 @@
             <param name="editlink.enable.edit.in.content.fusion.workspace" value="true"/>
         </publication>
     </deliverable>
+    <deliverable id="d-Mobile_Phone_Catalog_PDF-1762597092270" name="Mobile Phone Catalog PDF">
+        <?description {"content":"The Mobile Phone Catalog"}?>
+        <context idref="kbqNJsbnrODHLXP"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf">
+            <param href="cf://templates/Oxygen" name="pdf.publishing.template"/>
+            <param name="editlink.enable.edit.in.content.fusion.workspace" value="true"/>
+        </publication>
+    </deliverable>
 </project>
