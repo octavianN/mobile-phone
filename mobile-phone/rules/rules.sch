@@ -97,12 +97,25 @@
 
     <sch:pattern id="topic-indexterm-required">
         <sch:rule context="topic">
-            <sch:assert test="prolog/metadata/keywords" sqf:fix="addIndexTerm" role="warn"> No index
+            <sch:assert test="prolog/metadata/keywords" sqf:fix="addIndexTerm addIndexTerm_ai" role="warn"> No index
                 term for topic.</sch:assert>
             <sch:let name="topic" value="."/>
             <sqf:fix id="addIndexTerm">
                 <sqf:description>
-                    <sqf:title>Generate indexterm for topic</sqf:title>
+                    <sqf:title>Add indexterm for topic</sqf:title>
+                </sqf:description>
+                <sqf:add match="body" node-type="element" target="prolog" position="before">
+                    <metadata>
+                        <keywords>
+                            <indexterm>first</indexterm>
+                            <indexterm>second</indexterm>
+                        </keywords>
+                    </metadata>
+                </sqf:add>
+            </sqf:fix>
+            <sqf:fix id="addIndexTerm_ai">
+                <sqf:description>
+                    <sqf:title>Generate indexterm for topic with AI</sqf:title>
                 </sqf:description>
                 <sqf:add match="body" node-type="element" target="prolog" position="before">
                     <metadata>
