@@ -20,6 +20,7 @@
     <publication transtype="pdf-css-html5"/>
     <publication transtype="pdf-css-html5"/>
     <publication id="webhelp" transtype="webhelp-responsive"/>
+    <publication id="pdf" transtype="pdf-css-html5"/>
     <deliverable id="x1000InPDF" name="Model x1000 in PDF">
         <context idref="x1000ModelContext"/>
         <output href="./x1000Model-PDF"/>
@@ -51,9 +52,9 @@
     <deliverable id="d-Mobile_Phone_Catalog-1762596994329" name="Mobile Phone Catalog">
         <?description {"content":"The Mobile Phone Catalog"}?>
         <context idref="kbqNJsbnrODHLXP"/>
-        <output href="webhelp-output"/>
-        <publication idref="webhelp">
-            <param href="cf://templates/Oxygen" name="webhelp.publishing.template"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf">
+            <param href="cf://templates/Oxygen" name="pdf.publishing.template"/>
             <param name="editlink.enable.edit.in.content.fusion.workspace" value="true"/>
         </publication>
     </deliverable>
