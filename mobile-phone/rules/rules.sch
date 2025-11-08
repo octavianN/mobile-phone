@@ -63,20 +63,20 @@
     <!-- 4. All <image> elements must have a non-empty @alt attribute -->
     <sch:pattern id="image-alt-required">
         <sch:rule context="image">
-            <sch:assert test="@alt and normalize-space(@alt)" sqf:fix="add-alt add-alt-ai"> All
-                &lt;image&gt; elements must have a non-empty @alt attribute. </sch:assert>
+            <sch:assert test="alt and normalize-space(alt)" sqf:fix="add-alt add-alt-ai"> All
+                &lt;image&gt; elements must have a non-empty alternate text. </sch:assert>
             <sqf:fix id="add-alt">
                 <sqf:description>
-                    <sqf:title>Add or edit @alt attribute</sqf:title>
+                    <sqf:title>Add or edit alternate text</sqf:title>
                 </sqf:description>
-                <sqf:add target="alt" node-type="attribute">Describe the image here.</sqf:add>
+                <sqf:add target="alt" node-type="element" position="first-child">Describe the image here.</sqf:add>
             </sqf:fix>
             <sqf:fix id="add-alt-ai">
                 <sqf:description>
                     <sqf:title>Generate alternate text from image with AI</sqf:title>
                 </sqf:description>
-                <sqf:add node-type="attribute" target="alt"
-                    select="ai:invoke-action('generate.img.alternate.text', '', .)"/>
+                <sqf:add node-type="element" target="alt" position="first-child"
+                    select="ai:invoke-action('generate.img.alternate.text', 'Generate just text content', .)"/>
             </sqf:fix>
         </sch:rule>
     </sch:pattern>
