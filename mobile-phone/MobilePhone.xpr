@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="17.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="17.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>key.extensions.update.site.option.pane</String>
@@ -148,6 +148,9 @@
                                 <field name="useDITAVAL">
                                     <Boolean>false</Boolean>
                                 </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -177,6 +180,9 @@
                                 </field>
                                 <field name="useDITAVAL">
                                     <Boolean>false</Boolean>
+                                </field>
+                                <field name="shortcut">
+                                    <null/>
                                 </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
@@ -208,6 +214,9 @@
                                 <field name="useDITAVAL">
                                     <Boolean>false</Boolean>
                                 </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                             <profileConditionsSetInfo>
                                 <field name="conditions">
@@ -238,6 +247,9 @@
                                 <field name="useDITAVAL">
                                     <Boolean>false</Boolean>
                                 </field>
+                                <field name="shortcut">
+                                    <null/>
+                                </field>
                             </profileConditionsSetInfo>
                         </profileConditionsSetInfo-array>
                     </entry>
@@ -252,6 +264,10 @@
         <folder path="tasks/"/>
         <folder path="topics/"/>
         <file name="mobilePhone.ditamap"/>
+        <file name="MobilePhone.xpr"/>
         <file name="mobilePhoneCatalogue_DITA.1.3.ditamap"/>
+        <file name="mobilePhoneProjectFile.xml"/>
+        <file name="overview.dita"/>
+        <file name="productSbjSchemeVals.ditamap"/>
     </projectTree>
 </project>
