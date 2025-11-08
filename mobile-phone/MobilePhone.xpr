@@ -6,6 +6,10 @@
             <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.extensions.update.site.option.pane</String>
                         <Boolean>false</Boolean>
                     </entry>
@@ -253,14 +257,72 @@
                             </profileConditionsSetInfo>
                         </profileConditionsSetInfo-array>
                     </entry>
+                    <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>mobilePhoneCatalogue_DITA.1.3.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map PDF - based on HTML5 &amp; CSS</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
+                        <String>validation.scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>mobilePhone.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map Validation and Completeness Check</String>
+                                        <String>6/dita/ditamap.framework/DITA Map/DITA Map</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>Validation_scenario</String>
+                                        <String>Validation_scenario</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
                 </serializableOrderedMap>
             </serialized>
         </options>
     </meta>
     <projectTree name="MobilePhone.xpr">
+        <folder masterFiles="true" name="Main Files">
+            <file name="mobilePhoneProjectFile.xml"/>
+        </folder>
+        <folder path="../.contentfusion/"/>
         <folder path="concepts/"/>
         <folder path="ditaval/"/>
         <folder path="image/"/>
+        <folder path="out/"/>
         <folder path="tasks/"/>
         <folder path="topics/"/>
         <file name="mobilePhone.ditamap"/>

@@ -27,6 +27,7 @@
       <topicref href="tasks/sendFileBluetooth.dita"/>
       <topicref href="tasks/receiveFilesBluetooth.dita"/>
     </topicref>
+    <topicref href="topics/nfc_0.dita"/>
   </topicref>
     <topicref href="topics/serviceAndTroubleshooting.dita" audience="Technician">
       <topicmeta>
