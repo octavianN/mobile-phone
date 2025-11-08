@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project xmlns="https://www.dita-ot.org/project">
+    <context id="kbqNJsbnrODHLXP" name="Catalog">
+        <input href="../mobile-phone/mobilePhoneCatalogue_DITA.1.3.ditamap"/>
+    </context>
     <context id="x1000ModelContext" name="x1000Model">
         <input href="../mobile-phone/mobilePhone.ditamap"/>
         <profile>
