@@ -15,7 +15,7 @@
         </context>
         <steps>
             <step conref="../reusable_steps.dita#reusable_steps/removeStep"
-                conrefend="../reusable_steps.dita#reusable_steps/removeStep2">
+                conrefend="../reusable_steps.dita#reusable_steps/removeStepEnd">
                 <cmd/>
             </step>
         </steps>
