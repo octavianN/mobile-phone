@@ -27,7 +27,6 @@
       <topicref href="tasks/sendFileBluetooth.dita"/>
       <topicref href="tasks/receiveFilesBluetooth.dita"/>
     </topicref>
-    <topicref href="topics/nfc_0.dita"/>
   </topicref>
     <topicref href="topics/serviceAndTroubleshooting.dita" audience="Technician">
       <topicmeta>
@@ -39,4 +38,6 @@
         <topicref href="topics/runDiagnosticReport.dita"/>
     </topicref>
     <topicref href="productSbjSchemeVals.ditamap" format="ditamap" type="subjectScheme"/>
+  <topicref href="reusable_components.dita" processing-role="resource-only"/>
+  <topicref href="reusable_steps.dita" processing-role="resource-only"/>
 </map>

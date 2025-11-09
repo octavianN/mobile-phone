@@ -13,8 +13,8 @@
             <p>Make sure that your phone is turned off.</p>
         </context>
         <steps>
-            <step conref="removingBattery.dita#task_3ml_qm3_rf/firstStep"
-                conrefend="removingBattery.dita#task_3ml_qm3_rf/lastStep">
+            <step conref="../reusable_steps.dita#reusable_steps/removeStep"
+                conrefend="../reusable_steps.dita#reusable_steps/removeStepEnd">
                 <cmd/>
             </step>
             <step>
@@ -22,8 +22,8 @@
                     facing down.<image href="../image/insertSim.jpg" id="image_443_m1d_rf"
                         placement="break"/></cmd>
             </step>
-            <step conref="insertBattery.dita#task_ww1_fh3_rf/firstStep"
-                conrefend="insertBattery.dita#task_ww1_fh3_rf/lastStep">
+            <step conref="../reusable_steps.dita#reusable_steps/insertStep"
+                conrefend="../reusable_steps.dita#reusable_steps/insertStepEnd">
                 <cmd/>
             </step>
         </steps>

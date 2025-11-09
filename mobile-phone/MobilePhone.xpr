@@ -24,7 +24,7 @@
                                                         <Integer>-1</Integer>
                                                     </field>
                                                     <field name="value">
-                                                        <String>DITA - Extension</String>
+                                                        <String>DITA - Phone</String>
                                                     </field>
                                                     <field name="patchHandling">
                                                         <String>set</String>
@@ -100,23 +100,6 @@
                                                                 <String>DITA - Phone Rules</String>
                                                             </field>
                                                         </validationScenario>
-                                                    </field>
-                                                    <field name="patchHandling">
-                                                        <String>addIndex</String>
-                                                    </field>
-                                                    <field name="anchor">
-                                                        <null/>
-                                                    </field>
-                                                </poPatch>
-                                                <poPatch>
-                                                    <field name="fieldPath">
-                                                        <String>defaultValidationScenarios</String>
-                                                    </field>
-                                                    <field name="index">
-                                                        <Integer>1</Integer>
-                                                    </field>
-                                                    <field name="value">
-                                                        <String>DITA - Phone Rules</String>
                                                     </field>
                                                     <field name="patchHandling">
                                                         <String>addIndex</String>
@@ -9517,6 +9500,31 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
                     <entry>
                         <String>key.extensions.update.site.option.pane</String>
                         <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.media.tab.defined.working.sets</String>
+                        <mediaWorkingSetPO-array>
+                            <mediaWorkingSetPO>
+                                <field name="workingSetEntries">
+                                    <list>
+                                        <workingSetEntry>
+                                            <field name="entryType">
+                                                <String>Folder_entry_type</String>
+                                            </field>
+                                            <field name="value">
+                                                <String>${pdu}/image/</String>
+                                            </field>
+                                        </workingSetEntry>
+                                    </list>
+                                </field>
+                                <field name="wSetName">
+                                    <String>Images</String>
+                                </field>
+                                <field name="isSelected">
+                                    <Boolean>true</Boolean>
+                                </field>
+                            </mediaWorkingSetPO>
+                        </mediaWorkingSetPO-array>
                     </entry>
                     <entry>
                         <String>profiling.conditions</String>
