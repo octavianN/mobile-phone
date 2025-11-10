@@ -3,16 +3,16 @@
 <topic id="reusable_components">
     <title>Reusable Components</title>
     <body>
-        <note type="danger" id="note_xjn_rmf_ghc">Opening the phone back cover can expose you to
+        <note type="danger" id="danger_open_back">Opening the phone back cover can expose you to
             electrical components. Always power off the phone and disconnect it from any charger
             before opening the back cover to avoid injury or damage.</note>
-        <note type="caution" id="note_dtp_qmf_ghc">Touching internal components without proper
+        <note type="caution" id="danget_internal">Touching internal components without proper
             grounding can cause static electricity discharge, which may damage sensitive
             parts.</note>
-        <note type="important" id="note_h3c_rmf_ghc">Puncturing or mishandling the battery can cause
-            it to catch fire or explode. Handle the battery with care and avoid using sharp tools
-            near it.</note>
-        <note type="note" id="note_zzf_rmf_ghc">Opening the phone may void your warranty. Check your
+        <note type="important" id="important_baterry">Puncturing or mishandling the battery can
+            cause it to catch fire or explode. Handle the battery with care and avoid using sharp
+            tools near it.</note>
+        <note type="note" id="note_open_phone">Opening the phone may void your warranty. Check your
             warranty terms before attempting any repairs or modifications.</note>
     </body>
 </topic>

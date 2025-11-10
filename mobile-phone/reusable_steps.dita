@@ -6,7 +6,7 @@
         <steps>
             <step id="insertStep">
                 <cmd> Insert the battery into the battery compartment. See the following image:
-                        tess<image href="image/insertBattery.jpg" id="image_j5s_bnl_wf"
+                        <image href="image/insertBattery.jpg" id="image_j5s_bnl_wf"
                         placement="break"/></cmd>
             </step>
             <step id="insertStepEnd">
@@ -16,7 +16,7 @@
                 <cmd>Remove the back cover. </cmd>
             </step>
             <step id="removeStepEnd">
-                <cmd>Lift out the battery from the notch as per the following image: first<image
+                <cmd>Lift out the battery from the notch as per the following image: <image
                         href="image/removingBattery.jpg" id="image_cc3_mn3_rf" placement="break"
                     /></cmd>
             </step>
