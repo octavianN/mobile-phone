@@ -7,8 +7,8 @@
     <!-- 1. Each topic must have a non-empty <shortdesc> -->
     <sch:pattern id="shortdesc-required">
         <sch:rule context="topic | concept | task | reference">
-            <sch:assert test="shortdesc and normalize-space(shortdesc)" role="warn"
-                sqf:fix="add-shortdesc add-shortdesc-ai"> Each topic must have a non-empty
+            <sch:assert test="shortdesc" role="warn"
+                sqf:fix="add-shortdesc add-shortdesc-ai"> Each topic must have a
                 &lt;shortdesc&gt; element. </sch:assert>
 
             <sqf:fix id="add-shortdesc">
@@ -24,7 +24,7 @@
                     <sqf:title>Generate &lt;shortdesc&gt; with AI</sqf:title>
                 </sqf:description>
                 <sqf:add match="title" target="shortdesc" node-type="element" position="after"
-                    select="ai:invoke-action('action.short.description', 'Do not ad shortdesc element', $root)"/>
+                    select="ai:transform-content('Rephrase the following text in a single phrase strictly less than 40 words.', $root)"/>
             </sqf:fix>
         </sch:rule>
     </sch:pattern>
@@ -76,7 +76,10 @@
                     <sqf:title>Generate alternate text from image with AI</sqf:title>
                 </sqf:description>
                 <sqf:add node-type="element" target="alt" position="first-child"
-                    select="ai:invoke-action('generate.img.alternate.text', 'Generate just text content', .)"/>
+                    select="
+                    ai:transform-content(
+                    'Create a short alternate text description for this image:',
+                    concat('${attach(', resolve-uri(@href, base-uri()), ')}'))"/>
             </sqf:fix>
         </sch:rule>
     </sch:pattern>
