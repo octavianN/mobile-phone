@@ -78,7 +78,7 @@
                 <sqf:add node-type="element" target="alt" position="first-child"
                     select="
                     ai:transform-content(
-                    'Create a short alternate text description for this image:',
+                    'Create a short alternate text description for this image, just the text:',
                     concat('${attach(', resolve-uri(@href, base-uri()), ')}'))"/>
             </sqf:fix>
         </sch:rule>
